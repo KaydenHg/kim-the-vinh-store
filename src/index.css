@@ -1,0 +1,49 @@
+:root {
+  --bg-color: #0a0a0a;
+  --surface-color: #1a1a1a;
+  --primary-gold: #d4af37;
+  --secondary-gold: #c5a028;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+  --accent-silver: #c0c0c0;
+  --border-color: #333333;
+  --font-main: 'Playfair Display', serif;
+  --font-alt: 'Montserrat', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: var(--font-alt);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, .logo {
+  font-family: var(--font-main);
+  letter-spacing: 2px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: var(--font-alt);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

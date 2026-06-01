@@ -1,0 +1,37 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.nav-shortcuts {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: var(--surface-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.nav-shortcuts button {
+  background: none;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-shortcuts button.active {
+  color: var(--primary-gold);
+  border-bottom: 2px solid var(--primary-gold);
+}
+
+.nav-shortcuts button:hover {
+  color: var(--primary-gold);
+}
